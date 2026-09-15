@@ -28,7 +28,7 @@
     <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
     <meta name="author" content="ThemePixels">
 
-    <title>Bracket Responsive Bootstrap 4 Admin Template</title>
+    <title>SISTEMA DE VENTAS</title>
 
     <!-- vendor css -->
     <link href="../../public/lib/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -691,7 +691,33 @@
 
       <div class="br-pagebody">
 
-        <!-- start you own content here -->
+        <div class="br-section-wrapper">
+          <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Basic Responsive DataTable</h6>
+
+          <div class="table-wrapper">
+            <table id="datatable1" class="table display responsive nowrap">
+              <thead>
+                <tr>
+                  <th class="wd-15p">Nombre</th>
+                  <th class="wd-15p">Editar</th>
+                  <th class="wd-20p">Eliminar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>FUSIL</td>
+                  <td><button class="btn btn-secondary">EDITAR</button></td>
+                  <td><button class="btn btn-danger">ELIMINAR</button></td>
+                </tr>
+                <tr>
+                  <td>FUSIL</td>
+                  <td><button type="button" class="btn btn-secondary btn-icon"><span class="fa fa-edit"></span></button></td>
+                  <td><button type="button" class="btn btn-danger btn-icon"><span class="fa fa-trash"></span></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- table-wrapper -->
+        </div><!-- br-section-wrapper -->
 
       </div><!-- br-pagebody -->
 
