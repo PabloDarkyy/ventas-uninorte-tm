@@ -698,12 +698,12 @@
             <table id="datatable1" class="table display responsive nowrap">
               <thead>
                 <tr>
-                  <th class="wd-15p">Nombre</th>
-                  <th class="wd-15p">Editar</th>
+                  <th class="wd-15p">Nombre Producto</th>
+                  <th class="wd-15p">Accion</th>
                   <th class="wd-20p">Eliminar</th>
                 </tr>
               </thead>
-              <tbody>
+              <!-- <tbody>
                 <tr>
                   <td>FUSIL</td>
                   <td><button class="btn btn-secondary">EDITAR</button></td>
@@ -714,7 +714,7 @@
                   <td><button type="button" class="btn btn-secondary btn-icon"><span class="fa fa-edit"></span></button></td>
                   <td><button type="button" class="btn btn-danger btn-icon"><span class="fa fa-trash"></span></button></td>
                 </tr>
-              </tbody>
+              </tbody> -->
             </table>
           </div><!-- table-wrapper -->
         </div><!-- br-section-wrapper -->
