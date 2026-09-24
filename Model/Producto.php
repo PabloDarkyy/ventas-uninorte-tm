@@ -10,13 +10,13 @@
             //codificacion de caracteres
             parent::set_names();
             //consulta  sql
-            $sql = "SELECT * FROM tm_producto WHERE est = 1";
-            $sql = $conectar->prepare($sql);
+           
+            $sql = $conectar->prepare("SELECT * FROM tm_producto WHERE est = 1");
 
-            $sql = execute();
-            $resultado = $sql->fetchAll();
+            $sql->execute();
+          
             
-            return $resultado;
+            return $sql->fetchAll();
 
 
 

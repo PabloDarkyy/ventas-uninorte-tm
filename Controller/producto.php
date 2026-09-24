@@ -1,11 +1,11 @@
 <?php
 
-require_once(../config/conexion.php);
-require_once(../model/Productos.php);
+require_once("../Config/conexion.php");
+require_once("../model/Producto.php");
 
-$producto = new Productos();
+$producto = new Producto();
 
-    switch($_GET("op")){
+    switch($_GET["op"]){
         case "listar":
             $datos = $producto->get_producto();
 
@@ -21,10 +21,10 @@ $producto = new Productos();
             }
             $results = array(
                 "sEcho" => 1,
-                "iTotalRecords" => cout($data),
+                "iTotalRecords" => count($data),
                 "iTotalDisplayRecords" => count($data),
                 "aaData" => $data
-            )
+            );
             echo json_encode($results);
 
         break;
