@@ -1,6 +1,6 @@
-function init(){
+//function init(){
 
-}
+//}
 
 $(document).ready(function(){
 
@@ -62,4 +62,12 @@ $(document).ready(function(){
 
 });
 
-init();
+$(document).on("click", "#btnNuevo", function(){
+    $("#modalmantenimiento").modal("show");
+})
+
+function eliminar(prod_id){
+    $.post("../../controller/producto.php?op=eliminar", {prod_id:prod_id}, function(data){});
+}
+
+//init();
